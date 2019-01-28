@@ -1,0 +1,147 @@
+
+button {
+  background-color:  gray ;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 10px;
+  margin-left: 70px;
+  width: 10%;
+}
+
+.imgcontainer {
+   margin-top: 00px;
+   margin-bottom: 00px;
+   margin-right:800px;
+   margin-left: 1085px;
+   position: absolute;
+}
+
+.enr {
+  margin-top: 00px;
+  margin-bottom: 00px;
+  margin-right:300px;
+  margin-left: 00px;
+  position: absolute;
+}
+
+.live {
+  margin-top: 50px;
+  margin-bottom: 00px;
+  margin-right:300px;
+  margin-left: 00px;
+  position: absolute;
+}
+
+.youtube {
+  margin-top: 60px;
+  margin-bottom: 00px;
+  margin-right:700px;
+  margin-left: 00px;
+  position: absolute;
+}
+
+
+.justin {
+  margin-top: 620px;
+  margin-bottom:00px;
+  margin-right:00px;
+  margin-left: 00px;
+  position: absolute;
+}
+
+.eminem {
+  margin-top: 500px;
+  margin-bottom:00px;
+  margin-right:00px;
+  margin-left: 00px;
+  position: absolute;
+}
+
+p, button {
+  color: white;
+}
+
+footer {
+  margin-top: 1700px;
+  margin-bottom:00px;
+  margin-right:00px;
+  margin-left: 00px;
+  position: absolute;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #e9e9e9;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+.topnav .search-container {
+  float: left;
+}
+
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
