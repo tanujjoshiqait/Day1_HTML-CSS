@@ -1,0 +1,149 @@
+
+
+<!DOCTYPE HTML>
+
+<html lang="en">
+
+<head >
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name=viewport content="width=device-width, initial-scale=1">
+	<meta name="description" content="Sign up Page">
+
+    <link rel="Stylesheet" href="SignUp.css">
+
+	<title> SignUp
+	</title>
+
+	<style>
+		
+    body {
+			background:url("backgr.jpg");
+			background-repeat: repeat;
+			background-attachment: fixed;
+		}
+	</style>
+	<script>
+			function startTime() {
+			  var today = new Date();
+			  var h = today.getHours();
+			  var m = today.getMinutes();
+			  var s = today.getSeconds();
+			  m = checkTime(m);
+			  s = checkTime(s);
+			  document.getElementById('clock').innerHTML =
+			  h + ":" + m + ":" + s;
+			  var t = setTimeout(startTime, 500);
+			}
+			function checkTime(i) {
+			  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+			  return i;
+			}
+			</script>
+
+</head>
+
+	<body class="container" onload='startTime()'>
+		<header>
+			<nav>
+			</nav>
+		</header>
+		<div>
+				<button class="button col-sm-12 col-lg-2 col-md-2" id="clock"  onClick=startTime()>Show Time</button>
+		
+		</div>
+<div class="row">
+		
+		
+
+<div class="col-sm-12 col-lg-5 col-md-5">
+		<form action="" >
+			<div>
+				<div class="row">
+					<div class="col-sm-2 col-lg-2 col-md-2 "><label for="name" >Name:<div class="col-sm-10 col-lg-10 col-md-10"><input type="text" name="name" placeholder="Enter Full Name" ></div></label></div> <br>
+				</div>
+
+  			<div class="row">
+					<div class="col-sm-2 col-lg-2 col-md-2"><label for="address">Address:<div class="col-sm-10 col-lg-10 col-md-10"><input type="text" name="address"placeholder="Enter full address"></div></label></div> <br>
+					</div>
+
+  			<div class="row">
+					<div class="col-sm-2 col-lg-2 col-md-2"><label for="uname">Username:<div class="col-sm-10 col-lg-10 col-md-10"><input type="text" name="uname" placeholder="Enter username"></div></label> </div><br>
+				</div>
+
+  			<div class="row">
+					<div class="col-sm-2 col-lg-2 col-md-2"><label for="pass">Password:<div class="col-sm-10 col-lg-10 col-md-10"><input type="password" name="pass" placeholder="Enter password"></div></label> </div><br>
+				</div>
+
+  			<div class="row">
+					<div class="col-sm-2 col-lg-2 col-md-2"><label for="cpass">Confirm Password:<div class="col-sm-10 col-lg-10 col-md-10"><input type="password" name="cpass" placeholder="confirm password" ></div><label> </div><br>
+				</div>
+
+  			<div class="row">
+					<div class="col-sm-2 col-lg-2 col-md-2"><label for="gender">Gender:</label></div><div class="col-sm-10 col-lg-10 col-md-10"><label for="gender">Male<input type="radio" name="gender" value="Male"></label>
+
+						<label for="gender">Female<input type="radio" name="gender" value="Female"></label>
+	  
+						<label for="gender">Other<input type="radio" name="gender" value="Other"></label></div><br>
+				</div>
+
+  			<div class="row">
+					<div class="col-sm-2 col-lg-2 col-md-2"><label for="dob">Date of Birth:<div class="col-sm-10 col-lg-10 col-md-10"><input type="date" name="dob" placeholder="Enter date of birth" ></div></label></div><br>
+				</div>
+
+  			<div class="row">
+					<div class="col-sm-2 col-lg-2 col-md-2"><label for="mob">Mobile Number:<div class="col-sm-10 col-lg-10 col-md-10"> <input type="number" name="mob" placeholder="Enter mobile number" ></div></label> </div><br>
+				</div>
+
+  			<div class="row">
+					<div class="col-sm-2 col-lg-2 col-md-2"><label for="lang">Language Known:<div class="col-sm-10 col-lg-10 col-md-10"> <input type="text" name="lang" placeholder="Enter language known" ></div></label> </div><br>
+				</div>
+
+  			<div class="row">
+					<div class="col-sm-2 col-lg-2 col-md-2">
+						<label for="country">Country:
+							<select name="country">
+								<option value="">Country...</option>
+								<option value="Afganistan">Afghanistan</option>
+								<option value="East Timor">East Timor</option>
+								<option value="Ecuador">Ecuador</option>
+								<option value="Egypt">Egypt</option>
+								<option value="Haiti">Haiti</option>
+								<option value="Hawaii">Hawaii</option>
+								<option value="Honduras">Honduras</option>
+								<option value="Iceland">Iceland</option>
+								<option value="India">India</option>
+								<option value="Indonesia">Indonesia</option>
+								<option value="Israel">Israel</option>
+								<option value="Italy">Italy</option>
+								<option value="Russia">Russia</option>
+								<option value="Rwanda">Rwanda</option>
+								<option value="St Barthelemy">St Barthelemy</option>
+	
+							</select><br>
+					</label></div>
+					
+				</div><br>
+
+  		<div class="row">
+				<div class="col-sm-2 col-lg-2 col-md-2 "><label for="profile">Profile Image:<div class="col-sm-10 col-lg-10 col-md-10"><input type="file" name="profile" name="pic" accept="image/*"></div></label></div><br>
+			</div><br>
+			<button class="button" type="button">SignUp
+			</button><br>
+
+		</div><br>
+	</form>
+</div>
+
+<div class="col-sm-12 col-lg-5 col-md-5 ">
+	<input class="img-responsive"  type="image" class="imgcontainer" src="signup.jpeg" alt="Submit" width="250" height="250" onclick="location.href='http://gmail.com'">
+</div>
+
+
+</div>
+	<footer class="col-sm-12">
+		<p>Copyright 2019 TMusical Pvt. Ltd.</p>
+	</footer>
+
+</body>
+
+</html>

@@ -1,0 +1,77 @@
+
+
+<!DOCTYPE HTML>
+
+<html lang="en">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name=viewport content="width=device-width, initial-scale=1">
+	<meta name="description" content="Sign up Page">
+	<link rel="Stylesheet" href="AccountLogin.css">
+	<title>Your Website</title>
+
+	<script>
+		function startTime() {
+		  var today = new Date();
+		  var h = today.getHours();
+		  var m = today.getMinutes();
+		  var s = today.getSeconds();
+		  m = checkTime(m);
+		  s = checkTime(s);
+		  document.getElementById('clock').innerHTML =
+		  h + ":" + m + ":" + s;
+		  var t = setTimeout(startTime, 500);
+		}
+		function checkTime(i) {
+		  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+		  return i;
+		}
+		</script>
+</head>
+
+<body onload='startTime()'>
+	<center>
+		<header >
+			<nav>
+			</nav>
+		</header>
+
+		<button class="button" id="clock" onClick=startTime()>Show Time</button>
+
+		<legend><h2>Login Form</legend></h2>
+
+
+		<div class="imgcontainer">
+			<img src="pic.png" alt="Avatar" class="avatar">
+		</div>
+
+
+
+  	<form action="" class="container" >
+
+  		<label for="username">Username: <input  type="email" name="username" Placeholder="Enter username"> </label><br>
+
+			<label for="pass">Password: <input type="password" name="pass" Placeholder="Enter Password"> </label><br>
+
+  		 <label for="remember"><input type="checkbox" checked="checked" name="remember"> Remember me</label><br><br>
+
+			<button class="button" type="button">Login</button>
+
+			<button class="button" onclick="location.href='SignUp.html'" type="button">SignUp</button><br><br>
+
+		</form>
+
+		<input type="image" src="google.jpeg" alt="Submit" width="48" height="48" onclick="location.href='http://gmail.com'">
+
+
+
+		<footer>
+			<p>Copyright 2019 QA Infotech Pvt. Ltd.</p>
+		</footer>
+
+	</center>
+
+</body>
+
+</html>
